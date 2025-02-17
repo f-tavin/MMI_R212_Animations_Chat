@@ -15,3 +15,12 @@ window.setInterval(() => {
         tail.classList.remove('tailUp');
     }, 1000);
 }, 7000);
+
+const patounes = document.querySelectorAll('div.hand>div');
+
+window.setInterval(() => {
+  patounes.forEach((patoune) => {
+    patoune.classList.toggle('handUp');
+    patoune.classList.toggle('handDown');
+  });
+}, 500);

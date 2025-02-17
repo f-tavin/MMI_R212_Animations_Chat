@@ -139,24 +139,27 @@
     height: 50px;
     position: absolute;
   }
-  .hand-l {
-    position: relative;
+  .hand-l,
+  .hand-r {
+    position: absolute;
     background-color: #ffffff;
-    height: 29px;
     width: 22px;
     border-radius: 10px;
+    transition: height .5s, top .5s;
+  }
+  .hand-l {
     left: 45px;
+  }
+  .hand-r {
+    left: 85px;
+  }
+  .handUp {
+    height: 29px;
     top: 30px;
   }
-  
-  .hand-r {
-    position: relative;
-    background-color: #ffffff;
+  .handDown {
     height: 18px;
-    width: 22px;
-    border-radius: 10px;
-    left: 85px;
-    top: 48px;
+    top: 75px;
   }
  
   .tail {
