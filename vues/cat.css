@@ -167,6 +167,11 @@
     left: -15px;
     top: 165px;
     border-radius: 22px;
+    transform-origin: 11px 11px;
+    transition: transform 1s;
+  }
+  .tailUp {
+    transform: rotate(-60deg);
   }
   .laptop {
     position: absolute;

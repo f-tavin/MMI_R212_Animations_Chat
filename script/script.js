@@ -6,3 +6,12 @@ window.setInterval(() => {
         eye.classList.remove('eyeClosed');
     }, 200);
 }, 5000);
+
+const tail = document.querySelector('div.tail');
+
+window.setInterval(() => {
+    tail.classList.add('tailUp');
+    window.setTimeout(() => {
+        tail.classList.remove('tailUp');
+    }, 1000);
+}, 7000);
