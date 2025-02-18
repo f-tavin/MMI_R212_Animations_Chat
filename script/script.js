@@ -24,3 +24,27 @@ window.setInterval(() => {
     patoune.classList.toggle('handDown');
   });
 }, 500);
+
+const face = document.querySelector('div.face');
+
+face.addEventListener('mousemove', (evt) => {
+  const x = evt.offsetX;
+  const y = evt.offsetY;
+
+  if (x < eye.offsetLeft - 5) {
+    eye.classList.add('lookLeft');
+  } else {
+    eye.classList.remove('lookLeft');
+  }
+
+  if (x > eye.offsetLeft + 23) {
+    eye.classList.add('lookRight');
+  } else {
+    eye.classList.remove('lookRight');
+  }
+});
+
+face.addEventListener('mouseleave', (evt) => {
+  eye.classList.remove('lookLeft');
+  eye.classList.remove('lookRight');
+});
